@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+body {
+    min-height: 100vh;
+    margin-left: 240px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a1eeea;
+}
+
+.logo {
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar a {
+    /* display: block; */
+    /* margin: 10px 20px; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    /* color: #333; */
+}
+
+.navbar a:hover {
+    font-weight: 700;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    /* margin: 10px 0px; */
+}
+
+section {
+    padding: 20px 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px 10px 0px 10px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input-container label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 150px;
+}
+
+.input-container input {
+    padding: 2px;
+    width: 100%;
+}
+
+#data-form button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: #a1eeea;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#data-form button:hover {
+    background-color: #7ed6df;
+}

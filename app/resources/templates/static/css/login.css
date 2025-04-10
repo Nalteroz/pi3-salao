@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 300px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(201, 201, 201, 0.6);
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper .imput-box {
+    position: relative;
+    margin: 0px 0px 20px;
+}
+
+.imput-box input {
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.imput-box input::placeholder {
+    color: #333;
+}
+
+.imput-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    
+    cursor: pointer;
+}
+
+.wrapper button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wrapper #error-message {
+    color: red;
+    text-align: center;
+    /* margin: 10px 0px; */
+}

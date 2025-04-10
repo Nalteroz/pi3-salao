@@ -1,0 +1,12 @@
+bcrypt
+flask
+flask-jwt-extended
+flask-migrate
+flask-smorest
+flask-sqlalchemy
+marshmallow
+passlib
+python-dotenv
+sqlalchemy
+alembic
+psycopg2-binary

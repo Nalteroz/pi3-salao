@@ -1,0 +1,29 @@
+{% extends 'base_page.html' %}
+
+{% block head %}
+    <title>{{ element_name.capitalize() }}</title>
+{% endblock %}
+
+{% block scripts %}
+    <script> 
+        var ELEMENT = '{{ element }}';
+        var DATA_PATH = '{{ data_path }}';
+    </script>
+    <script src={{ url_for('static', filename='js/add_element.js') }}></script>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Criar novo {{element_name}}</h2>
+        <form onsubmit="return false" id="data-form">
+            {% for prop, alias in columns_names.items() %}
+                <div class="input-container">
+                    <label for="{{prop}}">{{alias.capitalize()}}:</label>
+                    <input type="text" id="{{prop}}" name="{{prop}}" class="form-input">
+                </div>
+            {% endfor %}
+            <div id="error-message"></div>
+            <button type="submit" onclick="CreateElement()">Criar {{element_name}}</button>
+        </form>
+    </section>
+{% endblock %}

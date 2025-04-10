@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/base.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/login.css') }}>
+    <title>Login page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form id="login-form" onsubmit="return false">
+            <div class="imput-box">
+                <input type="text" id="email" placeholder="E-mail do usuário">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="imput-box">
+                <input type="password" id="password" placeholder="Senha">
+                <i class='bx bxs-lock' ></i>
+            </div>
+            <button type="submit" onclick="Login()">Entrar</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+</body>
+<script src={{ url_for('static', filename='js/login.js') }}></script>
+</html>

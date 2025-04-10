@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/base.css') }}>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">♻️ Recicle</a>
+        <nav class="navbar">
+            <a href="/element/truck">Caminhão</a>
+            <a href="/element/storage_history">Armazém</a>
+            <a href="/element/client">Cliente</a>
+            <a href="/element/collaborator">Colaborador</a>
+            <a href="/element/material">Material</a>
+            <a href="/element/material_collect_site">Local de coleta</a>
+            <a href="/element/material_collection">Coleta de material</a>
+            <a href="/element/material_triage">Triagem de material</a>
+            <a href="/element/transaction">Transações comercial</a>
+        </nav>
+        <div id="logout">
+            <i class='bx bx-exit'></i>
+            <a href="#" class="logout">Sair</a>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+{% block scripts %}
+{% endblock %}
+</html>

@@ -1,0 +1,21 @@
+#operation-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+#operation-buttons button{
+    padding: 10px;
+    width: 150px;
+}
+
+table th {
+    border-bottom: 1px solid #333;
+    padding-right: 10px;
+    font-weight: 400;
+    text-align: left;
+}
+
+table td {
+    padding: 5px;
+}
