@@ -2,7 +2,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333333;
+    background-image: url('/static/image/bg1.png');
+    background-position: center center;
+    background-size: auto 100%;
+    background-color: #F0B69C;
     margin: 0px;
 }
 

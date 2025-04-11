@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('/static/image/bg2.png') no-repeat center center/cover;
+    background-position: center top;
+    background-size: 1000px auto;
+    background-color: #F0B69C;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #ff6b6b;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services, .about, .contact {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.services .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.services .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

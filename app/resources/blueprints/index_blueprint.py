@@ -23,9 +23,8 @@ class Utils:
 
 @IndexBlueprint.route('/')
 class Index(MethodView):
-    @jwt_required()
     def get(self):
-       return ElementView.get(self, 'user')
+        return render_template('index.html')
 
 @IndexBlueprint.route('/element/<string:element>')
 class ElementView(MethodView):

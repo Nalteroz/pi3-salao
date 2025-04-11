@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/base.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/index.css') }}>
+    <title>Salão de Beleza - Agendamentos</title>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Salão de Beleza</a>
+            <ul class="nav-links">
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção principal -->
+    <header class="hero">
+        <div class="container">
+            <h1>Bem-vindo ao Studio HEMA</h1>
+            <p>Agende seu horário com facilidade e aproveite nossos serviços!</p>
+            <a href="#services" class="btn">Agendar Agora</a>
+        </div>
+    </header>
+
+    <!-- Seção de serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <i class='bx bx-cut'></i>
+                    <h3>Corte de Cabelo</h3>
+                    <p>Transforme seu visual com nossos cortes modernos e personalizados.</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-brush'></i>
+                    <h3>Coloração</h3>
+                    <p>Realce sua beleza com nossas técnicas de coloração profissional.</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-spa'></i>
+                    <h3>Tratamentos</h3>
+                    <p>Cuide dos seus cabelos com nossos tratamentos exclusivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção sobre nós -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos um salão de beleza dedicado a oferecer a melhor experiência para nossos clientes. Nossa equipe é formada por profissionais altamente qualificados, prontos para atender suas necessidades.</p>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações ou para agendar seu horário.</p>
+            <a href="tel:+5511999999999" class="btn">Ligar Agora</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Salão de Beleza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
